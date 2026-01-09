@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Alok Ray — Portfolio</title>
+  <meta name="description" content="Alok Ray — developer, designer, maker.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:;base64,=">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#home">Alok Ray</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h1>Hi — I'm Alok Ray</h1>
+        <p class="lead">I build web apps, design delightful experiences, and open-source useful tools. Replace this text with a short tagline about what you do.</p>
+        <p class="hero-actions">
+          <a class="btn primary" href="#projects">See projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>Write a short bio here — your role, skills, and what you love building. Example: "Full-stack developer focused on React, Node.js, and accessible UI." </p>
+        <ul class="skills">
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>Node.js</li>
+          <li>Design systems</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid projects">
+          <article class="card">
+            <h3>Project One</h3>
+            <p>Short description. Link to the repo or live demo.</p>
+            <p><a href="#" class="link">View project →</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Project Two</h3>
+            <p>Short description. Add details or screenshots.</p>
+            <p><a href="#" class="link">View project →</a></p>
+          </article>
+
+          <!-- Add more project cards -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>If you'd like to work together, send a message — or email me directly at <em>you@example.com</em> (replace).</p>
+
+        <!-- Replace the action URL with your Formspree endpoint or your server endpoint -->
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+          <label>
+            Name
+            <input name="name" type="text" required>
+          </label>
+          <label>
+            Email
+            <input name="email" type="email" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+
+        <p class="social">
+          Find me on
+          <a href="#" aria-label="GitHub">GitHub</a> ·
+          <a href="#" aria-label="LinkedIn">LinkedIn</a> ·
+          <a href="#" aria-label="Twitter">Twitter</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Alok Ray. Built with care.</p>
+    </div>
+  </footer>
+
+  <script>
+    // populate year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
